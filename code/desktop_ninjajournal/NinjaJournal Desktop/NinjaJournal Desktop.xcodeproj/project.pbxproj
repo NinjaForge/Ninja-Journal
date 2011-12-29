@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		804336981212A7C5002DA3D7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804336971212A7C5002DA3D7 /* Cocoa.framework */; };
+		8043369D1212A7C5002DA3D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8043369B1212A7C5002DA3D7 /* InfoPlist.strings */; };
+		8043369F1212A7C5002DA3D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8043369E1212A7C5002DA3D7 /* main.m */; };
+		804336A21212A7C5002DA3D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 804336A01212A7C5002DA3D7 /* MainMenu.xib */; };
+		804336A51212A7C5002DA3D7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 804336A31212A7C5002DA3D7 /* Credits.rtf */; };
+		804336A81212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 804336A71212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		804336941212A7C5002DA3D7 /* NinjaJournal Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NinjaJournal Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804336971212A7C5002DA3D7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		804336991212A7C5002DA3D7 /* NinjaJournal_Desktop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NinjaJournal_Desktop-Info.plist"; sourceTree = "<group>"; };
+		8043369A1212A7C5002DA3D7 /* NinjaJournal_Desktop_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NinjaJournal_Desktop_Prefix.pch; sourceTree = "<group>"; };
+		8043369C1212A7C5002DA3D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8043369E1212A7C5002DA3D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		804336A11212A7C5002DA3D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		804336A41212A7C5002DA3D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		804336A61212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NinjaJournal_DesktopAppDelegate.h; sourceTree = "<group>"; };
+		804336A71212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinjaJournal_DesktopAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		804336911212A7C4002DA3D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804336981212A7C5002DA3D7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		804336851212A7C2002DA3D7 = {
+			isa = PBXGroup;
+			children = (
+				8043368C1212A7C3002DA3D7 /* Classes */,
+				8043368D1212A7C4002DA3D7 /* Other Sources */,
+				8043368E1212A7C4002DA3D7 /* Resources */,
+				8043368F1212A7C4002DA3D7 /* Frameworks */,
+				804336951212A7C5002DA3D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8043368C1212A7C3002DA3D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				804336A61212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.h */,
+				804336A71212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8043368D1212A7C4002DA3D7 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8043369A1212A7C5002DA3D7 /* NinjaJournal_Desktop_Prefix.pch */,
+				8043369E1212A7C5002DA3D7 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8043368E1212A7C4002DA3D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				804336991212A7C5002DA3D7 /* NinjaJournal_Desktop-Info.plist */,
+				8043369B1212A7C5002DA3D7 /* InfoPlist.strings */,
+				804336A01212A7C5002DA3D7 /* MainMenu.xib */,
+				804336A31212A7C5002DA3D7 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8043368F1212A7C4002DA3D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804336971212A7C5002DA3D7 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		804336951212A7C5002DA3D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				804336941212A7C5002DA3D7 /* NinjaJournal Desktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		804336931212A7C4002DA3D7 /* NinjaJournal Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 804336AB1212A7C6002DA3D7 /* Build configuration list for PBXNativeTarget "NinjaJournal Desktop" */;
+			buildPhases = (
+				804336901212A7C4002DA3D7 /* Sources */,
+				804336911212A7C4002DA3D7 /* Frameworks */,
+				804336921212A7C4002DA3D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NinjaJournal Desktop";
+			productName = "NinjaJournal Desktop";
+			productReference = 804336941212A7C5002DA3D7 /* NinjaJournal Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		804336871212A7C3002DA3D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Ninja Forge";
+			};
+			buildConfigurationList = 8043368A1212A7C3002DA3D7 /* Build configuration list for PBXProject "NinjaJournal Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 804336851212A7C2002DA3D7;
+			productRefGroup = 804336951212A7C5002DA3D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				804336931212A7C4002DA3D7 /* NinjaJournal Desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		804336921212A7C4002DA3D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8043369D1212A7C5002DA3D7 /* InfoPlist.strings in Resources */,
+				804336A21212A7C5002DA3D7 /* MainMenu.xib in Resources */,
+				804336A51212A7C5002DA3D7 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		804336901212A7C4002DA3D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8043369F1212A7C5002DA3D7 /* main.m in Sources */,
+				804336A81212A7C6002DA3D7 /* NinjaJournal_DesktopAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8043369B1212A7C5002DA3D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8043369C1212A7C5002DA3D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		804336A01212A7C5002DA3D7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804336A11212A7C5002DA3D7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		804336A31212A7C5002DA3D7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				804336A41212A7C5002DA3D7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		804336A91212A7C6002DA3D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		804336AA1212A7C6002DA3D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		804336AC1212A7C6002DA3D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NinjaJournal_Desktop_Prefix.pch;
+				INFOPLIST_FILE = "NinjaJournal_Desktop-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "NinjaJournal Desktop";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		804336AD1212A7C6002DA3D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NinjaJournal_Desktop_Prefix.pch;
+				INFOPLIST_FILE = "NinjaJournal_Desktop-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "NinjaJournal Desktop";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8043368A1212A7C3002DA3D7 /* Build configuration list for PBXProject "NinjaJournal Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804336A91212A7C6002DA3D7 /* Debug */,
+				804336AA1212A7C6002DA3D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		804336AB1212A7C6002DA3D7 /* Build configuration list for PBXNativeTarget "NinjaJournal Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804336AC1212A7C6002DA3D7 /* Debug */,
+				804336AD1212A7C6002DA3D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 804336871212A7C3002DA3D7 /* Project object */;
+}

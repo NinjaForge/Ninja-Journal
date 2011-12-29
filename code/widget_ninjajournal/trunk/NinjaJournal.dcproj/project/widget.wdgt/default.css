@@ -1,0 +1,310 @@
+/*
+ * styling
+ */
+
+div#yoo-teamlog {
+}
+
+div#yoo-teamlog div.todos,
+div#yoo-teamlog div.logs {
+	overflow: hidden;
+}
+
+div#yoo-teamlog span.delta {
+	color: #969696;
+	font-size: 80%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+div#yoo-teamlog a.tooltip {
+	color: #646464;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* headline */
+div#yoo-teamlog h1.user {
+	font-size: 150%;
+	line-height: 150%;
+	color: #ff0000;
+	text-indent: 3px;
+}
+
+div#yoo-teamlog a.todos-trigger {
+	padding: 2px 20px 2px 0px;
+	color: #969696;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+div#yoo-teamlog a.todos-trigger:hover {
+	color: #969696;
+	text-decoration: none;
+}
+
+/* todos */
+div#yoo-teamlog div.todos {
+	padding-left: 2px;
+}
+
+div#yoo-teamlog div.todos div.todos-bg {
+	margin-bottom: 10px;
+	border: 1px dotted #B48C5A;
+	background: #ffffaa;
+}
+
+div#yoo-teamlog div.todos div.loading {
+	background: #ffffaa url(../images/loader.gif) 99% 5px no-repeat;
+}
+
+div#yoo-teamlog div.todos div.todos-t {
+	background: url(../images/todos_t.png) 0 0 repeat-x;
+}
+
+div#yoo-teamlog div.todos div.todos-b {
+	background: url(../images/todos_b.png) 0 100% repeat-x;
+}
+
+div#yoo-teamlog div.todos div.todos-l {
+	padding: 15px 0px 20px 0px;
+	background: url(../images/todos_l.png) 0 0 repeat-y;
+}
+
+div#yoo-teamlog div.todos div.todos-line {
+	padding: 0px 15px 0px 40px;
+	min-height: 30px;
+	background: url(../images/todos_line.png) 0 0 repeat;
+}
+
+div#yoo-teamlog div.todos ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+div#yoo-teamlog div.todos li {
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+div#yoo-teamlog div.todos li.checked, div#yoo-teamlog div.todos li.state-done, div#yoo-teamlog div.todos li.state-done * {
+	color: #AAAAAA;
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+div#yoo-teamlog div.todos li .checkbox, div#yoo-teamlog div.todos li .todo
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+div#yoo-teamlog div.todos li .todo p {
+	margin: 0;
+	padding: 0;
+}
+/*div#yoo-teamlog div.todos li span,*/
+.toggle-state.icon-toggle {
+	margin: 2px 10px 0px 0px;
+	width: 21px;
+	height: 20px;
+	display: block;
+	float: left;
+	background: url(../images/checkbox_unchecked.png) 0 0 no-repeat;
+	background-image: url(../images/checkbox_unchecked.png)!important;
+}
+
+div#yoo-teamlog div.todos li.checked span, div#yoo-teamlog div.todos li .icon-toggle-done {
+	background-image: url(../images/checkbox_checked.png)!important;
+}
+
+
+/* log-panel */
+div#yoo-teamlog div.logs {
+	padding-top: 2px;
+}
+
+div#yoo-teamlog div.logs div.left {
+	width: 62%;
+	float: left;
+}
+
+div#yoo-teamlog div.logs div.right {
+	width: 38%;
+	float: left;
+}
+
+div#yoo-teamlog div.log-panel {
+	padding-left: 2px;
+	padding-bottom: 20px;
+}
+
+div#yoo-teamlog div.log-panel div.state {
+	margin-top: 0px;
+	position: relative;
+}
+
+div#yoo-teamlog div.log-panel textarea {
+	width: 90%;
+	height: 100px;
+	font-weight: normal;
+	font-size: 220%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+div#yoo-teamlog div.log-panel textarea.loading {
+	background: url(../images/loader.gif) 99% 3px no-repeat;
+}
+
+div#yoo-teamlog div.log-panel div.state span.delta {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+}
+
+div#yoo-teamlog div.log-panel select.project {
+	margin-right: 5px;
+	width: 50%;
+}
+
+div#yoo-teamlog div.log-panel select.task {
+	width: 41%;
+}
+
+div#yoo-teamlog div.log-panel option.option1 {
+	color: #969696;
+}
+
+div#yoo-teamlog div.log-panel option.option2 {
+	background: #e6e6e6;
+}
+
+div#yoo-teamlog div.log-panel select.hours,
+div#yoo-teamlog div.log-panel select.minutes {
+	margin-right: 5px;
+}
+
+div#yoo-teamlog div.log-panel div.project-description {
+	width: 90%;
+	background: #f9f9f9;
+	border: 1px solid #c8c8c8;
+	padding: 5px;
+}
+
+div#yoo-teamlog div.log-panel div.project-description h1 {
+    margin-bottom: 5px;
+    font-size: 130%;
+    line-height: 130%;
+    color: #78a546;
+    font-weight: normal;
+}
+
+/* user-log */
+div#yoo-teamlog div.user-log span.date {
+	padding: 0px 5px 2px 20px;
+	border-bottom: 1px solid #d2dcdc;
+	color: #969696;
+	font-size: 80%;
+}
+
+div#yoo-teamlog div.user-log ul.log {
+	margin-top: 10px;
+	padding-left: 45px;
+	font-size: 130%;
+	line-height: 130%;
+	font-weight: bold;
+}
+
+div#yoo-teamlog div.user-log span.delta {
+	font-size: 60%;
+}
+
+/* team-log */
+div#yoo-teamlog div.team-log {
+	margin-left: 10px;
+}
+
+div#yoo-teamlog div.team-log-t {
+	background: #FAFBFD url(../images/teamlog_t.png) 0 0 repeat-x;
+}
+
+div#yoo-teamlog div.team-log-b {
+	background: url(../images/teamlog_b.png) 0 100% repeat-x;
+}
+
+div#yoo-teamlog div.team-log-l {
+	background: url(../images/teamlog_l.png) 0 0 repeat-y;
+}
+
+div#yoo-teamlog div.team-log-r {
+	background: url(../images/teamlog_r.png) 100% 0 repeat-y;
+}
+
+div#yoo-teamlog div.team-log-tl {
+	background: url(../images/teamlog_tl.png) 0 0 no-repeat;
+}
+
+div#yoo-teamlog div.team-log-tr {
+	background: url(../images/teamlog_tr.png) 100% 0 no-repeat;
+}
+
+div#yoo-teamlog div.team-log-bl {
+	background: url(../images/teamlog_bl.png) 0 100% no-repeat;
+}
+
+div#yoo-teamlog div.team-log-br {
+	padding: 1px 3px 3px 0px;
+	background: url(../images/teamlog_br.png) 100% 100% no-repeat;
+}
+
+div#yoo-teamlog div.team-log-line {
+	background: url(../images/teamlog_line.png) 0 0 repeat;
+}
+
+div#yoo-teamlog div.team-log-hole {
+	min-height: 100px;
+	padding: 15px 15px 15px 30px;
+	background: url(../images/teamlog_hole.png) 0 0 repeat-y;
+}
+
+div#yoo-teamlog div.loading {
+	background: url(../images/loader.gif) 99% 3px no-repeat;
+}
+
+div#yoo-teamlog div.team-log div.user {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #d2dcdc;
+	font-size: 100%;
+	line-height: 100%;
+	font-weight: bold;
+	color: #64AA00;
+}
+
+div#yoo-teamlog div.team-log h2.state {
+	margin: 10px 0px 10px 0px;
+	font-size: 150%;
+	line-height: 110%;
+	color: #323232;
+}
+
+div#yoo-teamlog div.team-log ul.log {
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+.rotateX {
+	-webkit-transform: perspective(500) rotateX(11deg);
+}
+#logs {
+	overflow: hidden!important;
+	overflow-y: auto!important;
+}
+#description {
+	z-index: 999999;
+}

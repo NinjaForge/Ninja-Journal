@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="default.css">
+    <script type="text/javascript" src="mootools12.js" charset="utf-8"></script>
+    <script type="text/javascript" src="log.js" charset="utf-8"></script>
+    <script type="text/javascript" src="toggle.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+</head>
+<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
+    <div id="front" apple-part-locked="true"></div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 12,12,12,12; image-border: 1; image-border-color: 0.1500,0.1500,0.1500; image-border-width: 3; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div id="done" class="apple-no-children" apple-part="com.apple.Dashcode.part.glassbutton"></div>
+        <input id="location" type="text" name="location" value="http://localhost/ninjaboard/index.php?option=com_ninjateamlog&amp;view=log&amp;Itemid=63&amp;format=json" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" maxlength="0" onchange="setLocation(event)">
+        <input id="username" type="text" name="username" value="admin" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield">
+        <input id="passwd" type="password" name="passwd" value="edlIn320" class="apple-textfield apple-no-children login" apple-part="com.apple.Dashcode.part.textfield">
+    </div>
+    <div id="frontold">
+        <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 2; image-shape: 3; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 0,0,0,0; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; image-include-custom: 1; image-custom-image-path: ninjateamlog.png; image-custom-center: 1; image-custom-resize: 2; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
+        <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" id="helloText" apple-group="text" apple-default-image-visibility="hidden" apple-style="part-height-dependent: true;"></div>
+        <div id="logs" apple-part="com.apple.Dashcode.part.box" class="rotateX">
+            <textarea id="description" apple-part="com.apple.Dashcode.part.textarea" name="description" apple-default-image-visibility="hidden">just chillin'</textarea>
+        </div>
+        <div id="popup" apple-part="com.apple.Dashcode.part.roundedpopupbutton" class="apple-no-children" apple-style="image-theme: 2; image-shape: 3; image-button-type: 1; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+        <div id="popup1" apple-part="com.apple.Dashcode.part.roundedpopupbutton" class="apple-no-children" apple-style="image-theme: 1; image-shape: 3; image-button-type: 1; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; gradient-bri-diff: 0.384600013; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+        <input id="slider" apple-part="com.apple.Dashcode.part.slider" type="range" min="0" value="0" max="100">
+        <input id="slider1" apple-part="com.apple.Dashcode.part.slider" type="range" min="0" value="0" max="100">
+        <div id="button" apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 2; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 1,1,1,1; image-bottom-color: 0.6154,0.6154,0.6154,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0.5294,0.5294,0.5294,1; image-border-width: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; shadow-include-shadow: 0;"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+	804336871212A7C3002DA3D7 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 804336961212A7C5002DA3D7 /* NinjaJournal Desktop */;
+		activeTarget = 804336931212A7C4002DA3D7 /* NinjaJournal Desktop */;
+		codeSenseManager = 8043368B1212A7C3002DA3D7 /* Code sense */;
+		executables = (
+			804336961212A7C5002DA3D7 /* NinjaJournal Desktop */,
+		);
+		ignoreBreakpointsInProjectsDict = {
+		};
+		userBuildSettings = {
+		};
+	};
+	8043368B1212A7C3002DA3D7 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	804336931212A7C4002DA3D7 /* NinjaJournal Desktop */ = {
+		activeExec = 0;
+		executables = (
+			804336961212A7C5002DA3D7 /* NinjaJournal Desktop */,
+		);
+	};
+	804336961212A7C5002DA3D7 /* NinjaJournal Desktop */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "NinjaJournal Desktop";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+}

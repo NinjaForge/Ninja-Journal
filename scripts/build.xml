@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>  
+<project name="com_ninjajournal" basedir=".." default="build">
+
+	<import file="scripts/build/component.xml" />
+
+</project>

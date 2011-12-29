@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: changelog.xml 374 2010-11-20 09:29:25Z Richie $ -->
+<!-- @TODO make changelog.dtd -->
+<!--DOCTYPE changelog SYSTEM "http://ninjaforge.com/dtd/changelog.dtd"-->
+
+<changelogs>
+	<version>1.0.1</version>
+	<date>TBA</date>
+	<state>Maintenance Release
+		<upgrade>Upgraded to the latest version of Nooku Framework and Ninja Framework.</upgrade>
+		<bugfix>Built in updater now works again.</bugfix>
+	</state>
+
+	<version>1.0.0</version>
+	<date>January 2011</date>
+	<state>First Stable Release
+		<upgrade>Upgraded to the latest version of Nooku Framework and Ninja Framework.</upgrade>
+		<bugfix>Fixed issue where users on servers with Tidy, had '1' in description fields upon saving.</bugfix>
+		<bugfix>WYSIWYG textareas for descriptions hardcoded to using TinyMCE at all times.</bugfix>
+		<bugfix>Descriptions sometimes changed to '1' on save.</bugfix>
+	</state>
+
+	<version>1.0.0 RC</version>
+	<date>Novermber 2010</date>
+	<state>Maintenance Release
+		<log>Upgraded to the latest version of Nooku Framework.</log>
+		<bugfix>Fixed Todo State not sticking</bugfix>
+		<bugfix>Fixed Project State not sticking</bugfix>
+		<bugfix>Fixed Task State not sticking</bugfix>
+		<bugfix>Fixed missing option in state dropdowns</bugfix>
+		<new>Added Title to Todo list items</new>
+	</state>
+
+	<version>1.0.0 Beta2</version>
+	<date>2010-04-27 13:16:18</date>
+	<state>Minor Release
+		<new>Added Estonian translation - thanks Rivo Zängov!</new>
+	</state>
+
+	<version>1.0.0 Beta</version>
+	<date>2010-04-04 09:33:47</date>
+	<state>First Release
+		<log>Initial release of NinjaJournal.</log>
+	</state>
+</changelogs>

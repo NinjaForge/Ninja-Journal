@@ -1,0 +1,433 @@
+/*
+ * styling
+ */
+
+div#ninjajournal {
+}
+
+div#ninjajournal div.todos,
+div#ninjajournal div.logs {
+	overflow: hidden;
+}
+
+div#ninjajournal span.delta {
+	color: #969696;
+	font-size: 80%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+
+div#ninjajournal a.tooltip {
+	color: #646464;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* headline */
+div#ninjajournal h1.user {
+	font-size: 150%;
+	line-height: 150%;
+	color: #ff0000;
+	text-indent: 3px;
+}
+
+div#ninjajournal a.todos-trigger {
+	padding: 2px 20px 2px 0px;
+	color: #969696;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+div#ninjajournal a.todos-trigger:hover {
+	color: #969696;
+	text-decoration: none;
+}
+
+/* todos */
+div#ninjajournal div.todos {
+	padding-left: 2px;
+}
+
+div#ninjajournal div.todos div.todos-bg {
+	margin-bottom: 10px;
+	border: 1px dotted #B48C5A;
+	background: #ffffaa;
+}
+
+div#ninjajournal div.todos div.loading {
+	background: #ffffaa url(../../com_ninja/images/16/spinner.gif) 99% 5px no-repeat;
+}
+
+div#ninjajournal div.todos div.todos-t {
+	background: url(../images/todos_t.png) 0 0 repeat-x;
+}
+
+div#ninjajournal div.todos div.todos-b {
+	background: url(../images/todos_b.png) 0 100% repeat-x;
+}
+
+div#ninjajournal div.todos div.todos-l {
+	padding: 15px 0px 20px 0px;
+	background: url(../images/todos_l.png) 0 0 repeat-y;
+}
+
+div#ninjajournal div.todos div.todos-line {
+	padding: 0px 15px 0px 40px;
+	min-height: 30px;
+	background: url(../images/todos_line.png) 0 0 repeat;
+}
+
+div#ninjajournal div.todos ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+div#ninjajournal div.todos li {
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+div#ninjajournal div.todos li.checked, div#ninjajournal div.todos li.state-done, div#ninjajournal div.todos li.state-done *,
+div#ninjajournal div.todos li.checked, div#ninjajournal div.todos li.state-state-true, div#ninjajournal div.todos li.state-state-true * {
+	color: #AAAAAA;
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+div#ninjajournal div.todos li .checkbox, div#ninjajournal div.todos li .todo
+{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+div#ninjajournal div.todos li .todo p {
+	margin: 0;
+	padding: 0;
+}
+/*div#ninjajournal div.todos li span,*/
+.toggle-state.icon-toggle {
+	margin: 2px 10px 0px 0px;
+	width: 21px;
+	height: 20px;
+	display: block;
+	float: left;
+	background: url(../images/checkbox_unchecked.png) 0 0 no-repeat;
+	background-image: url(../images/checkbox_unchecked.png)!important;
+}
+
+div#ninjajournal div.todos li.checked span, div#ninjajournal div.todos li .icon-toggle-state-true {
+	background-image: url(../images/checkbox_checked.png)!important;
+}
+
+
+/* log-panel */
+div#ninjajournal div.logs {
+	padding-top: 2px;
+}
+
+div#ninjajournal div.logs div.left {
+	width: 62%;
+	float: left;
+}
+
+div#ninjajournal div.logs div.right {
+	width: 38%;
+	float: left;
+}
+
+div#ninjajournal div.log-panel {
+	padding-left: 2px;
+	padding-bottom: 20px;
+}
+
+div#ninjajournal div.log-panel div.state {
+	margin-top: 0px;
+	position: relative;
+}
+
+div#ninjajournal div.log-panel textarea {
+	width: 90%;
+	height: 100px;
+	font-weight: normal;
+	font-size: 220%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+div#ninjajournal div.log-panel textarea.loading {
+	background: url(../../com_ninja/images/16/spinner.gif) 99% 3px no-repeat;
+}
+
+div#ninjajournal div.log-panel div.state span.delta {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+}
+
+div#ninjajournal div.log-panel select.project {
+	margin-right: 5px;
+	width: 50%;
+}
+
+div#ninjajournal div.log-panel select.task {
+	width: 41%;
+}
+
+div#ninjajournal div.log-panel option.option1 {
+	color: #969696;
+}
+
+div#ninjajournal div.log-panel option.option2 {
+	background: #e6e6e6;
+}
+
+div#ninjajournal div.log-panel select.hours,
+div#ninjajournal div.log-panel select.minutes {
+	margin-right: 5px;
+}
+
+div#ninjajournal div.log-panel div.project-description {
+	width: 90%;
+	background: #f9f9f9;
+	border: 1px solid #c8c8c8;
+	padding: 5px;
+}
+
+div#ninjajournal div.log-panel div.project-description h1 {
+    margin-bottom: 5px;
+    font-size: 130%;
+    line-height: 130%;
+    color: #78a546;
+    font-weight: normal;
+}
+
+/* user-log */
+div#ninjajournal div.user-log span.date {
+	padding: 0px 5px 2px 20px;
+	border-bottom: 1px solid #d2dcdc;
+	color: #969696;
+	font-size: 80%;
+}
+
+div#ninjajournal div.user-log ul.log {
+	margin-top: 10px;
+	padding-left: 45px;
+	font-size: 130%;
+	line-height: 130%;
+	font-weight: bold;
+}
+
+div#ninjajournal div.user-log span.delta {
+	font-size: 60%;
+}
+
+/* team-log */
+div#ninjajournal div.team-log {
+	margin-left: 10px;
+}
+
+div#ninjajournal div.team-log-t {
+	background: #FAFBFD url(../images/teamlog_t.png) 0 0 repeat-x;
+}
+
+div#ninjajournal div.team-log-b {
+	background: url(../images/teamlog_b.png) 0 100% repeat-x;
+}
+
+div#ninjajournal div.team-log-l {
+	background: url(../images/teamlog_l.png) 0 0 repeat-y;
+}
+
+div#ninjajournal div.team-log-r {
+	background: url(../images/teamlog_r.png) 100% 0 repeat-y;
+}
+
+div#ninjajournal div.team-log-tl {
+	background: url(../images/teamlog_tl.png) 0 0 no-repeat;
+}
+
+div#ninjajournal div.team-log-tr {
+	background: url(../images/teamlog_tr.png) 100% 0 no-repeat;
+}
+
+div#ninjajournal div.team-log-bl {
+	background: url(../images/teamlog_bl.png) 0 100% no-repeat;
+}
+
+div#ninjajournal div.team-log-br {
+	padding: 1px 3px 3px 0px;
+	background: url(../images/teamlog_br.png) 100% 100% no-repeat;
+}
+
+div#ninjajournal div.team-log-line {
+	background: url(../images/teamlog_line.png) 0 0 repeat;
+}
+
+div#ninjajournal div.team-log-hole {
+	min-height: 100px;
+	padding: 15px 15px 15px 30px;
+	background: url(../images/teamlog_hole.png) 0 0 repeat-y;
+}
+
+div#ninjajournal div.loading {
+	background: url(../../com_ninja/images/16/spinner.gif) 99% 3px no-repeat;
+}
+
+div#ninjajournal div.team-log div.user {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #d2dcdc;
+	font-size: 100%;
+	line-height: 100%;
+	font-weight: bold;
+	color: #64AA00;
+}
+
+div#ninjajournal div.team-log h2.state {
+	margin: 10px 0px 10px 0px;
+	font-size: 150%;
+	line-height: 110%;
+	color: #323232;
+}
+
+div#ninjajournal div.team-log ul.log {
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+
+.ninja-button-wrap {
+	border: black 1px solid;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ninja-button, a.ninja-button:link, a.ninja-button:visited {
+	background: transparent url(../images/button_bg.png) repeat-x center right;
+	display: inline-block;
+	color: hsl(0, 0%, 39%);
+	font-size: 11px;
+	height: 23px;
+	line-height: 18px;
+	text-decoration: none;
+	
+	text-shadow: black 0 -1px 0;
+	padding: 0;
+	
+	/* An opera quirk requires us to use an negative text indent, and correct it with extra left padding */
+	padding-left: 10px;
+	
+	padding-right: 35px;
+	margin: 0;
+	border: 1px rgb(90, 90, 89) solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+a.ninja-button, a.ninja-button:link, a.ninja-button:visited {
+	line-height: 23px;
+}
+.ninja-button:hover, a.ninja-button:hover, a.ninja-button:link:hover, a.ninja-button:visited:hover {
+	background-position: top right;
+	color: hsl(0, 0%, 29%);
+	text-shadow: black 0 1px 0;
+	-webkit-transition: all 300ms ease-in;
+	-moz-transition: all 300ms ease-in;
+	-o-transition: all 300ms ease-in;
+	transition: all 300ms ease-in;
+	text-decoration: none;
+}
+.ninja-button:active, a.ninja-button:active, a.ninja-button:link:active, a.ninja-button:visited:active {
+	background-position: bottom right;
+	color: white;
+	text-shadow: white 0 1px 10px;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	transition: all 0s;
+}
+/* Removing firefox's ugly dotted border */
+.ninja-button:focus, .ninja-button:active, .ninja-button:active:hover { 
+    outline: none!important; 
+}
+.ninja-button-wrap.light {
+	display: block;
+	border-color: lightgray;
+}
+.ninja-button.light, a.ninja-button.light, .ninja-button.light:link, a.ninja-button.light:visited {
+	background-image: url(../images/button_light_bg.png);
+	border-color: #F3F3F3;
+	text-indent: 0;
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+	text-align: center;
+	text-shadow: hsla(0, 0%, 95%, .8) 0 1px 0;
+}
+.ninja-button.light:hover, a.ninja-button.light:hover, a.ninja-button.light:link:hover, a.ninja-button.light:visited:hover {
+	text-shadow: hsla(0, 0%, 95%, .8) 0 1px 0;
+}
+.ninja-button.light:active, a.ninja-button.light:active, a.ninja-button.light:link:active, a.ninja-button.light:visited:active {
+	color: hsl(0, 0%, 29%);
+	text-shadow: hsla(0, 0%, 5%, .2) 0 1px 0;
+	text-decoration: none;
+}
+
+.ninja-button-wrap.light.active {
+	background: url(../../com_ninja/images/16/spinner.gif) no-repeat center;
+}
+.ninja-button-wrap.light.active .ninja-button.light {
+	background-image: none;
+	color: transparent;
+	text-shadow: none;
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	transition: all 0s;
+}
+.ninja-button-wrap.inactive {
+	height: 0px;
+	visibility: hidden;
+}
+
+/* Tooltips */
+.ninjatool-tip {
+	float: left;
+	background: black;
+	background-color: hsla(0, 0%, 0%, 0.9);
+	padding: 5px;
+	z-index: 50;
+	border-radius: 5px;
+}
+
+.ninjatool-tip::before {
+	content: url(../images/arrow-up.png);
+	position: absolute;
+	bottom: 100%;
+	left: 10px;
+}
+
+.ninjatool-title {
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-size: 100%;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.ninjatool-text {
+	font-size: 100%;
+	margin: 0;
+	color: white;
+}

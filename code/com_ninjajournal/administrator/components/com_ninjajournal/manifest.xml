@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade" mootools="1.2">
+    <name>NinjaJournal</name>
+    <author>NinjaForge</author>
+    <creationDate>2010-04-04 09:33:47</creationDate>
+    <copyright>(C) 2007-2010 Ninja Media Group. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+    <csslicense>CC-BY</csslicense>
+    <jslicense>MIT</jslicense>
+    <authoremail>support@ninjaforge.com</authoremail>
+    <authorurl>ninjaforge.com</authorurl>
+    <updateurl>http://ninjaforge.com/extensions/ninja-journal?format=file</updateurl>
+    <support href="http://ninjaforge.com/extensions/ninja-journal">Forums</support>
+    <rate href="http://extensions.joomla.org/extensions/communities-a-groupware/project-a-task-management/12065">Joomla Extensions Directory (JED)</rate>
+    <!-- 
+                Color cheat sheat
+                        - Alpha         darkorange
+                        - Beta          red
+                        - RC            blue
+                        - Stable        #009199
+        -->
+    <version status="Stable" color="#009199">1.0.1</version>
+    <revision>615</revision>
+    <description>Sweet, Simple Timetracking</description>
+    <!-- Credits -->
+    <credits>
+        <a href="http://www.eraser.ee">Estonian translation by Rivo Z&#195;&#201;&#194;&#164;ngov</a>
+    </credits>
+    <!-- Application/site -->
+    <files folder="components/com_ninjajournal">
+        <file>ninjajournal.php</file>
+        <file>router.php</file>
+        <folder>controllers</folder>
+        <folder>databases</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+    <administration>
+        <menu img="../media/com_ninja/images/16/ninjaforge.png">NinjaJournal</menu>
+        <submenu>
+            <menu view="dashboard" img="../media/com_ninja/images/16/dashboard.png">Dashboard</menu>
+            <menu view="reports" img="../media/com_ninjajournal/images/16/reports.png">Reports</menu>
+            <menu view="todos" img="../media/com_ninjajournal/images/16/todos.png">Todos</menu>
+            <menu view="logs" img="../media/com_ninjajournal/images/16/logs.png">Logs</menu>
+            <menu view="projects" img="../media/com_ninjajournal/images/16/projects.png">Projects</menu>
+            <menu view="tasks" img="../media/com_ninjajournal/images/16/tasks.png">Tasks</menu>
+            <menu view="types" img="../media/com_ninjajournal/images/16/types.png">Types</menu>
+        </submenu>
+        <files folder="administrator/components/com_ninjajournal">
+            <file>changelog.xml</file>
+            <file>ninjajournal.php</file>
+            <folder>controllers</folder>
+            <folder>databases</folder>
+            <folder>install</folder>
+            <folder>models</folder>
+            <folder>templates</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/language">
+            <language tag="en-GB">en-GB/en-GB.com_ninjajournal.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_ninjajournal.menu.ini</language>
+            <language tag="et-EE">et-EE/et-EE.com_ninjajournal.ini</language>
+            <language tag="et-EE">et-EE/et-EE.com_ninjajournal.menu.ini</language>
+        </languages>
+    </administration>
+    <media folder="media/com_ninjajournal" destination="com_ninjajournal">
+        <folder>charts</folder>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <file>htaccess.txt</file>
+    </media>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">install/uninstall.sql</file>
+        </sql>
+    </uninstall>
+    <installfile>install/install.php</installfile>
+    <deleted>
+        <admin>
+            <folder>helpers</folder>
+            <folder>tables</folder>
+        </admin>
+        <site>
+            <file>models/statuses.php</file>
+            <folder>tables</folder>
+        </site>
+    </deleted>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.com_ninjajournal.ini</language>
+        <language tag="et-EE">et-EE/et-EE.com_ninjajournal.ini</language>
+    </languages>
+</install>
